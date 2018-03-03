@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def index
-    #ドラえもんとのび太
+    #ドラえもんとのび太とジャイアン
   end
 
   def help
