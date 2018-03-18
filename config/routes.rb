@@ -4,8 +4,6 @@ Rails.application.routes.draw do
   # 　　　パス＃メソッド
   get 'favorites/index'
 
-  get 'topics/new'
-
   get 'sessions/new'
 
   get 'users/new'
