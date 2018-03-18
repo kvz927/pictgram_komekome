@@ -1,10 +1,14 @@
 class CommentsController < ApplicationController
-  before_action :set_comment, only: [:show, :edit, :update, :destroy]
+  before_action :set_comment, only: [:index, :create, :show, :edit, :update, :destroy]
 
   # GET /comments
   # GET /comments.json
   def index
     @comments = Comment.all
+  end
+
+  def new
+    @index = Index.new
   end
 
   # GET /comments/1

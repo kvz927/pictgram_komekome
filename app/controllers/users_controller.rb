@@ -3,6 +3,11 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
+  def new
+    @index = Index.new
+  end
+
+
   def create
     #binding.pry
     @user = User.new(user_params)
@@ -18,6 +23,6 @@ class UsersController < ApplicationController
 
   private
   def user_params
-    params.require(:user).permit(:name,:email,:password, :password_confirmation)
+    params.require(:user).permit(:name,:email,:password, :password_confirmation, :text)
   end
 end

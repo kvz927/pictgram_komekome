@@ -3,6 +3,8 @@ class TopicsController < ApplicationController
     @topic = Topic.new
   end
 
+  
+
   def create
     if current_user.topics.create(topic_params)
       redirect_to topics_path, notice:'投稿に成功しました'
